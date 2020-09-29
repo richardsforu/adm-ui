@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-header">Product Component</div>
+    <div class="card-body">
+      <h1>Product Component</h1> <hr/>
+     
+      <button class="btn btn-success">Load Products</button>
+
+      <hr/>
+
+      <table class="table table-hover">
+          <tr *ngFor="let product of products">
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.description}}</td>
+          </tr>
+      </table>
+
+     
+    </div>
+
+  </div>

@@ -1,0 +1,23 @@
+<div class="container">
+
+  <div class="card">
+    <div class="card-header">APP Component</div>
+    <div class="card-body">
+      <h1>APP Component</h1>
+      <hr/>
+      <button class="btn btn-primary" (click)="greet('Good Morning')">Greet</button>
+      <hr/>
+      <h2>{{childMsg}}</h2>
+    </div>
+
+  </div>
+
+  <hr/> <hr/>
+
+<app-greet [message]=msg (parentMsg)="test($event)"></app-greet>
+<hr/><hr/>
+
+<app-products></app-products>
+
+
+</div>

@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "products": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb://user5:password123@ds131109.mlab.com:31109/cts",
+    "database": "",
+    "password": "",
+    "name": "products",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}
