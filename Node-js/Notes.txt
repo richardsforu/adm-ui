@@ -1,0 +1,11 @@
+real web application
+
+   shoudl process the request in many ways
+
+   ==> based on URL
+   ==> based on http-method
+   ==> based on http-headers
+   ==> based on req parameters/body
+
+   
+
