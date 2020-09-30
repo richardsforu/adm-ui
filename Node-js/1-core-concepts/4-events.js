@@ -9,6 +9,7 @@ const ee = new EventEmitter();
 ee.on('event-1', () => {
     console.log('handlig event1 of module 1');
 })
+
 //module-2
 ee.on('event-1', () => {
     console.log('handlig event1 of module 2');
@@ -18,14 +19,20 @@ ee.on('event-2', () => {
 
 })
 
-//ee.emit('event-1'); //=> emit one event on two diffent modules
+//ee.emit('event-2'); //=> emit one event on two diffent modules
 
-/* setTimeout(() => {
+/*
+console.log('--- common logic');
+setTimeout(() => {
     ee.emit('event-1');
     setTimeout(() => {
         ee.emit('event-2')
-    }, 1000);
-}, 1000); */
+    }, 5000);
+}, 2000); 
+
+
+*/
+
 
 
 //----------------------------------------
@@ -45,6 +52,9 @@ class Door extends EventEmitter {
 const frontDoor = new Door();
 const backDoor = new Door();
 
+
+
+
 // Light
 //-------------------------------------
 frontDoor.on('doorOpen',(e)=>{
@@ -56,21 +66,25 @@ frontDoor.on('doorClosed',(e)=>{
     console.log('LIGHTS OFF.. ');
     
 })
-/* 
+
+
 setTimeout(()=>{
-    door.open();
+    frontDoor.open();
+    backDoor.open();
+
     
 },3000);
 
 setTimeout(()=>{
-    door.close();
-},3000);
- */
+    frontDoor.close();
+    backDoor.close();
+},5000);
+
 
 frontDoor.open(); 
 frontDoor.close(); 
 
-
+ 
 
 
 

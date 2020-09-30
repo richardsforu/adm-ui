@@ -31,13 +31,15 @@ video/mp4
 
 //--------------------------------------------------------------------
 
-/* // following function executed only when a client send request 
+/*
+ // following function executed only when a client send request 
 server.on('request',(request,response)=>{
     response.writeHead(200,{'Content-Type':'text/html'});
     response.write('<h1>My First Server Code using Node.JS</h1>');
     response.end();
-}) */
+}) 
 
+*/
 
 /*
 // making response type as 'pdf'
@@ -58,7 +60,7 @@ server.on('request',(req,res)=>{
     console.log('Ready for next request....');
 })
 
-
+*/
 
 
 //---------------------------------------------------------------------------------
@@ -73,8 +75,8 @@ server.on('request',(req,res)=>{
 
 //----------------------------------------------------------------------------------
   
-*/
 /*
+
 server.on('request',(req,res)=>{
   
     console.log('HTTP Request type: '+req.method);
@@ -85,9 +87,10 @@ server.on('request',(req,res)=>{
 
     console.log('Hello '+req.name);
     
-    /*
+    
     if(httpMethod == 'GET' && httpUrl=='/'){
         console.log('You have sent GET request for /'); 
+       // req.write('You have sent GET request for /');
       //  console.log('hello '+req.query.name);
         
     }
@@ -111,8 +114,8 @@ server.on('request',(req,res)=>{
     
 });
 
- */
-
+ 
+*/
 
  /*
 Video gets loaded into a buffer meory (Ram Memory)
@@ -121,11 +124,12 @@ Video gets loaded into a buffer meory (Ram Memory)
 
  */
 
- /*
+ 
  // Stream a video file with out chunks
+ /*
 server.on('request',(req,res)=>{
     res.writeHead(200,{'Content-Type':'video/mp4'});
-    fs.readFile('./20191004_195205.mp4',(err,data)=>{
+    fs.readFile('./The-Boys-S02E06.mkv',(err,data)=>{
         if(err){
             console.log('error occured '+err);
             return;
@@ -140,11 +144,11 @@ server.on('request',(req,res)=>{
 
 */
 
-/*
+
 server.on('request',(req,res)=>{
 
     res.writeHead(200,{'Content-Type':'video/mp4'});
-    let readStream=fs.createReadStream('./20191004_195205.mp4');// EventEmitter
+    let readStream=fs.createReadStream('./The-Boys-S02E06.mkv');// EventEmitter
 
     readStream.on('data',(chunk)=>{
         res.write(chunk);
@@ -160,7 +164,7 @@ server.on('request',(req,res)=>{
 
 })
 
-*/
+
 
 /* server.on('request',(request,response)=>{
 

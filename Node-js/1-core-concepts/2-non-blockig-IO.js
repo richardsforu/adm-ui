@@ -4,6 +4,7 @@
 //IO
 const fs=require('fs');
 
+console.log(process.pid);
 
 // ASynchronous call
 fs.readFile('./veg-menu.txt','utf8',(error,data)=>{
@@ -15,7 +16,7 @@ console.log(data);
 
 }); // blocking IO
 
-console.log('do something else');
+console.log('<<<<<< do something else >>>>>>');
 
 
 

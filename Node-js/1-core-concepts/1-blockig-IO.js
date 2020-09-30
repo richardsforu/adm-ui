@@ -7,11 +7,11 @@ const fs=require('fs');
 
 // Synchronous call
 
-const vegMenu=fs.readFileSync('./veg-menu.txt','utf8'); // blocking IO
+const vegMenu=fs.readFileSync('./veg-menu.txt','UTF8'); // blocking IO
 
 console.log(vegMenu);
 
-console.log('do something else');
+console.log('>>>> do something else >>>>');
 
 
 
